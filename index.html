@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | Bliss Socials</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
@@ -35,8 +35,8 @@
 
           <div class="hidden md:flex items-center space-x-3">
             <a
-              href="/"
-              class="py-4 px-2 font-medium text-gray-800 rounded hover:bg-pink-600 hover:text-white transition duration-300"
+              href="register/index.html"
+              class="py-2 px-6 font-medium text-gray-800 rounded border-2 border-pink-200 hover:bg-pink-600 hover:border-2 hover:border-pink-800 hover:text-white transition duration-300"
               >Sign Up</a
             >
           </div>
@@ -63,7 +63,7 @@
             <li>
               <a
                 href="/"
-                class="block text-sm py-4 px-2 bg-yellow-200 text-gray-800 font-semibold"
+                class="block text-sm font-semibold py-4 px-2 bg-yellow-200"
                 >Home</a
               >
             </li>
@@ -84,7 +84,7 @@
 
             <li>
               <a
-                href="/"
+                href="register/index.html"
                 class="block text-sm py-4 px-2 hover:bg-yellow-200 transition duration-300"
                 >Sign Up</a
               >
@@ -96,7 +96,7 @@
     <main
       class="container mx-auto flex flex-col lg:flex-row-reverse lg:justify-center lg:py-24 lg:gap-24"
     >
-      <section class="">
+      <section class="lg:container lg:my-auto">
         <div
           class="container mx-auto flex flex-col items-center p-4 space-y-4 lg:p-0"
         >
@@ -104,44 +104,53 @@
           <h1 class="text-3xl font-bold text-gray-800">
             Welcome to Bliss Socials!
           </h1>
-          <p>Share your bliss</p>
+          <p class="text-gray-800 text-lg">Share your bliss</p>
         </div>
       </section>
-      <section>
+      <section class="lg:w-full">
+        <h2
+          class="text-xl text-center font-semibold text-gray-800 lg:text-left"
+        >
+          Enter your details to log in
+        </h2>
         <form class="container mx-auto flex flex-col p-4 space-y-4 lg:px-0">
           <div class="flex flex-col space-y-2">
-            <label class="px-2" for="username">Email</label>
+            <label class="px-2 text-gray-800" for="email">Email</label>
             <input
               class="p-2 rounded-full"
               type="email"
               id="email"
               name="email"
               placeholder="Enter email"
+              required
             />
           </div>
           <div class="flex flex-col space-y-2">
-            <label class="px-2" for="password">Password</label>
+            <label class="px-2 text-gray-800" for="password">Password</label>
             <input
               class="p-2 rounded-full"
               type="password"
               id="password"
               name="password"
               placeholder="Enter password"
+              minlength="8"
+              required
             />
           </div>
 
           <button
-            class="p-2 bg-yellow-200 text-gray-800 font-semibold rounded-full border-2 border-gray-800 hover:bg-yellow-300 transition duration-300"
+            class="p-2 bg-pink-600 text-white font-semibold rounded-full border-2 border-pink-800 hover:bg-pink-500 transition duration-300"
             type="submit"
+            action="/profile"
           >
-            Login
+            Log In
           </button>
         </form>
 
         <div class="container mx-auto flex p-4 space-x-2">
           <p>Don't have an account yet?</p>
           <a
-            href="/"
+            href="register/index.html"
             class="font-semibold rounded text-pink-600 hover:text-pink-700 transition duration-300"
             >Sign Up</a
           >
@@ -157,12 +166,12 @@
             >
           </li>
           <li>
-            <a href="/" class="hover:text-pink-400 transition duration-300"
+            <a href="#" class="hover:text-pink-400 transition duration-300"
               >About</a
             >
           </li>
           <li>
-            <a href="/" class="hover:text-pink-400 transition duration-300"
+            <a href="#" class="hover:text-pink-400 transition duration-300"
               >Contact</a
             >
           </li>
