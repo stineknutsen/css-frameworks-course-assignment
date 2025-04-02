@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
-  <body class="bg-pink-200">
-    <header class="shadow-md shadow-gray-800">
+  <body class="bg-pink-200 min-h-screen grid grid-rows-[auto_1fr_auto]">
+    <header class="shadow-sm shadow-gray-800">
       <nav class="container mx-auto">
         <div class="flex justify-between">
           <a href="/" class="flex items-center py-4 px-2">
@@ -94,7 +94,7 @@
       </nav>
     </header>
     <main
-      class="container mx-auto flex flex-col lg:flex-row-reverse lg:justify-center lg:py-24 lg:gap-12"
+      class="container mx-auto flex flex-col lg:flex-row-reverse lg:justify-center lg:py-24 lg:gap-24"
     >
       <section class="">
         <div
@@ -148,6 +148,29 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-gray-800 text-pink-200 py-4 mt-6">
+      <nav>
+        <ul class="flex justify-center space-x-4">
+          <li>
+            <a href="/" class="hover:text-pink-400 transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="/" class="hover:text-pink-400 transition duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/" class="hover:text-pink-400 transition duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="container mx-auto flex justify-center p-4">
+        <p>Copyright &copy; 2025</p>
+      </div>
+    </footer>
   </body>
 </html>
