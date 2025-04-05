@@ -122,15 +122,17 @@
         </div>
       </nav>
     </header>
-    <main class="container mx-auto flex flex-col lg:max-w-[1200px]">
-      <section class="flex flex-col mt-10 mx-6">
+    <main
+      class="container mx-auto flex flex-col justify-center lg:max-w-[1200px]"
+    >
+      <section class="flex flex-col mt-10 mx-3 sm:mx-6">
         <h1
-          class="text-xl text-left sm:text-center font-semibold text-gray-800"
+          class="text-xl sm:text-2xl lg:text-3xl font-serif text-left sm:text-center font-semibold text-gray-800"
         >
-          What's on your mind?
+          Share something
         </h1>
         <form
-          class="container mx-auto mt-5 flex flex-col p-4 bg-yellow-100 bg-opacity-80 rounded-md shadow-md shadow-gray-800 space-y-4"
+          class="container mx-auto mt-5 flex flex-col p-4 bg-yellow-100 bg-opacity-80 rounded-md shadow-md shadow-gray-800 space-y-4 lg:max-w-[800px]"
         >
           <div class="flex flex-col space-y-2">
             <label class="px-2 text-gray-800" for="image">Image</label>
@@ -157,7 +159,7 @@
           </div>
 
           <button
-            class="flex justify-center gap-1 p-2 bg-pink-600 text-white font-semibold rounded-full border-2 border-pink-800 hover:bg-pink-500 transition duration-300"
+            class="flex justify-center gap-1 p-2 bg-pink-600 text-white font-semibold w-24 mx-auto rounded-full border-2 border-pink-800 hover:bg-pink-500 transition duration-300"
             type="submit"
           >
             Post
@@ -178,39 +180,41 @@
           </button>
         </form>
       </section>
-      <section class="mt-10 mx-6">
+      <section
+        class="mt-10 mx-3 sm:mx-6 flex flex-col sm:flex-row justify-between items-baseline lg:min-w-[980px] lg:mx-auto xl:mx-6 xl:max-w-[1200px]"
+      >
         <h2
-          class="text-xl text-left sm:text-center font-semibold text-gray-800"
+          class="text-xl sm:text-2xl font-serif text-left sm:text-center font-semibold text-gray-800"
         >
           Feed
         </h2>
-      </section>
-      <section
-        id="search-and-sort"
-        class="flex flex-col sm:flex-row sm:justify-center gap-2 mt-6 mx-6"
-      >
-        <div>
-          <input
-            type="text"
-            id="search-input"
-            placeholder="Search..."
-            class="px-4 py-2 border bg-white/80 border-gray-300 rounded-lg shadow-sm"
-          />
-        </div>
-        <div>
-          <select
-            id="sort-select"
-            class="px-4 py-2.5 bg-white/80 border border-gray-300 rounded-lg shadow-sm"
-          >
-            <option value="">Sort</option>
-            <option value="latest">Latest</option>
-            <option value="oldest">Oldest</option>
-          </select>
+        <div
+          id="search-and-sort"
+          class="flex flex-col-reverse sm:flex-row gap-2 mt-6"
+        >
+          <div>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search..."
+              class="px-4 py-2 border bg-white/80 border-gray-300 rounded-lg shadow-sm"
+            />
+          </div>
+          <div>
+            <select
+              id="sort-select"
+              class="px-4 py-2.5 bg-white/80 border border-gray-300 rounded-lg shadow-sm"
+            >
+              <option value="">Sort</option>
+              <option value="latest">Latest</option>
+              <option value="oldest">Oldest</option>
+            </select>
+          </div>
         </div>
       </section>
 
       <section
-        class="px-6 mt-4 container mx-auto grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+        class="px-3 sm:px-6 mt-4 container mx-auto grid gap-3 sm:gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
       >
         <div
           class="relative bg-white shadow-md rounded-md overflow-hidden group"

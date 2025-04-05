@@ -124,39 +124,43 @@
     </header>
 
     <main class="container mx-auto flex flex-col lg:max-w-[1200px]">
-      <section class="container flex p-6 space-x-3">
+      <section
+        class="container flex p-3 sm:p-6 space-x-3 mx-auto lg:max-w-[1024px] xl:max-w-[1200px]"
+      >
         <img
           src="/images/bliss-logo-square.png"
           alt="Profile Picture"
-          class="w-20 h-20 rounded-full border-2 border-gray-800"
+          class="w-16 sm:w-20 h-16 sm:h-20 rounded-full border-2 border-gray-800"
         />
         <div class="flex flex-col justify-end space-y-1">
-          <h1 class="text-3xl font-bold">Username</h1>
+          <h1 class="text-xl sm:text-2xl font-bold">Username</h1>
           <div class="flex space-x-4">
             <div>
-              <p class="text-gray-600">Posts</p>
-              <p class="text-gray-600">14</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">Posts</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">14</p>
             </div>
             <div>
-              <p class="text-gray-600">Following</p>
-              <p class="text-gray-600">115</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">Following</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">115</p>
             </div>
             <div>
-              <p class="text-gray-600">Followers</p>
-              <p class="text-gray-600">985</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">Followers</p>
+              <p class="text-gray-600 text-[14px] sm:text-sm">985</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="container flex px-6">
+      <section
+        class="container flex px-3 sm:px-6 mx-auto lg:max-w-[1024px] xl:max-w-[1200px]"
+      >
         <button
-          class="border-2 border-gray-800 px-3 py-1 rounded-md bg-yellow-200 text-gray-800 hover:bg-yellow-300 transition duration-300"
+          class="border-2 border-gray-800 px-3 py-1 text-xs sm:text-sm rounded-md bg-yellow-200 text-gray-800 hover:bg-yellow-300 transition duration-300"
         >
           Follow user
         </button>
       </section>
       <section
-        class="px-6 mt-4 container mx-auto grid gap-3 sm:gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+        class="px-3 sm:px-6 mt-4 container mx-auto grid gap-3 sm:gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
       >
         <div
           class="relative bg-white shadow-md rounded-md overflow-hidden group"
