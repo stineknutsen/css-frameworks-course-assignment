@@ -15,6 +15,7 @@ Bliss socials is a social media app styled with tailwind css.
 
 ## Features
 
+- Responsive nav
 - Login form
 - Register form
 - Post form
@@ -34,7 +35,13 @@ Bliss socials is a social media app styled with tailwind css.
 
 ### Installation
 
-Clone this repository: git clone https://github.com/stineknutsen/css-frameworks-course-assignment/tree/css-frameworks
+#### Clone this repository:
+
+git clone https://github.com/stineknutsen/css-frameworks-course-assignment/tree/css-frameworks
+
+#### Install dependencies
+
+npm install
 
 ### Running the project
 
