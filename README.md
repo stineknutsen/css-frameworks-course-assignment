@@ -1,12 +1,12 @@
-# css-frameworks-course-assignment
+# Bliss Socials
 
 ![screenshot of bliss socials profile page](/images/bliss-profile-screenshot.png)
 
 ## Description
 
-Bliss socials is a social media app styled with tailwind css.
+Bliss socials is a social media app styled with tailwind css for a fictional client. It was made for the Noroff Front-end development CSS Frameworks course assignment.
 
-## Pages/features
+## Pages
 
 - Home/login page
 - Register page
@@ -37,11 +37,15 @@ Bliss socials is a social media app styled with tailwind css.
 
 #### Clone this repository:
 
+```bash
 git clone https://github.com/stineknutsen/css-frameworks-course-assignment/tree/css-frameworks
+```
 
 #### Install dependencies
 
+```bash
 npm install
+```
 
 ### Running the project
 
